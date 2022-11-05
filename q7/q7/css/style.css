@@ -1,1 +1,38 @@
 @charset "UTF-8";
+.box{
+  margin: 0 auto;
+  width: 500px;
+}
+.text{
+  background: #fad296;
+  width: 500px;
+  padding: 20px;
+  line-height: 16px;
+  border: solid 5px #815a0a;
+  border-radius: 30px;
+  position: relative;
+}
+.text::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 30px;
+  bottom: -30px;
+  border-top: 30px solid #815a0a;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+}
+.text::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 30px;
+  bottom: -24px;
+  border-top: 30px solid #fad296;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+}

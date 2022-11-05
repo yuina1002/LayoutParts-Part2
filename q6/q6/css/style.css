@@ -1,1 +1,31 @@
 @charset "UTF-8";
+.box{
+  background: #388bff;
+  position: fixed;
+  width: 100%;
+}
+.largebox{
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  text-align: center;
+  margin: 0 auto;
+}
+.box2 a{
+  font-size: 24px;
+  font-weight: bold;
+  color: #f2ff7b;
+}
+.box2{
+  margin-top: 30px;
+}
+a{
+  color:#ffffff;
+  text-decoration: none;
+}
+ul{
+  display: flex;
+}
+li{
+  padding: 30px;
+}

@@ -1,4 +1,139 @@
 @charset "UTF-8";
+.box1{
+  height: 200px;
+  width: 200px;
+  background: #76ff826b;
+  margin: 0 auto;
+}
+.box2{
+  height: 200px;
+  width: 200px;
+  background: #331aefd0;
+  margin: 0 auto;
+}
+.box3{
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: solid 10px #ecf1f2;
+  border-top: solid 10px #14ff4bcd;
+  animation: rotation 1.1s linear infinite;
+}
 
+.q1{
+  opacity: 0;
+  animation: fadein 4s linear forwards;
+}
+@keyframes fadein{
+  100%{
+    opacity: 1;
+  }
+}
+.q2{
+  opacity: 1;
+  animation: fadeout 4s ease 4s;
+}
+@keyframes fadeout{
+  100%{
+    opacity: 0;
+  }
+}
+.q3{
+  animation: rotation 4s linear infinite;
+}
+@keyframes rotation{
+  0%{ transform: rotate(0);}
+  100%{ transform: rotate(360deg);}
+}
+.q4{
+  transition: 0.5s;
+}
+.q4:hover{
+  background: #ff27e2c9;
+  transition: 0.5s;
+}
+.q5{
+  transition: 0.5s;
+}
+.q5:hover{
+  transition: 0.5s;
+  transform: rotateZ(360deg);
+}
+.q6{
+  transition: 0.5s;
+}
+.q6:hover{
+  transform:translate(0,-20%);
+  transition: 0.5s;
+}
+.q7{
+  transition: 0.5s;
+}
+.q7:hover{
+  transform: translate(20%,0);
+  transition: 0.5s;
+}
+.q8{
+  transition: 0.5s;
+}
+.q8:hover{
+  transition: 0.5s;
+  height: 300px;
+}
+.q9{
+  transition: 0.5s;
+}
+.q9:hover{
+  transition: 0.5s;
+  width: 500px;
+}
+.q10{
+  transition: 0.5s;
+}
+.q10:hover{
+  box-sizing: border-box;
+  transition: 0.5s;
+  border: 10px #00ffe5 solid;
+}
+.q11{
+  transition: 0.5s;
+}
+.q11:hover{
+  transition: 0.5s;
+  box-shadow: 8px 11px 10px 3px #06031ed0;
+}
+ul{
+  display: flex;
+}
+li{
+  list-style: none;
+  background: #ffffff;
+  width: 300px;
+  border: solid 1px #000000;
+  border-right: none;
+  border-collapse: collapse;
+  padding: 20px;
+  transition: 0.5s;
+}
+.bg{
+  background-image: url("https://picsum.photos/id/1005/200/300");
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  background-position: center center;
+  border-radius: 50%;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+li:last-child{
+  border-right: solid 1px #000000;
+}
+li:hover{
+  transition: 0.5s;
+  box-shadow: 0px 0px 10px 3px #424242d0;
+  z-index: 1;
+}
 /* カード内の画像は以下のURLを使用して下さい */
 /* https://picsum.photos/id/1005/200/300 */

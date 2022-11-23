@@ -13,26 +13,20 @@
   position: relative;
 }
 .text::before{
-  content: '';
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  left: 30px;
   bottom: -30px;
   border-top: 30px solid #815a0a;
-  border-right: 30px solid transparent;
-  border-left: 30px solid transparent;
 }
 .text::after{
+  bottom: -24px;
+  border-top: 30px solid #fad296;
+}
+.text::before,.text::after{
   content: '';
   position: absolute;
   display: block;
   width: 0;
   height: 0;
   left: 30px;
-  bottom: -24px;
-  border-top: 30px solid #fad296;
   border-right: 30px solid transparent;
   border-left: 30px solid transparent;
 }
